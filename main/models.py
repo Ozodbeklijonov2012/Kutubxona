@@ -174,6 +174,10 @@ class Ustoz(models.Model):
     fan = models.ForeignKey(Fan, on_delete=models.CASCADE)
     main_ustoz = models.CharField(max_length=255)
 
+    class Meta:
+        verbose_name = 'Ustoz'
+        verbose_name_plural = 'Ustozlar'
+
     def __str__(self):
         return self.ism
 
